@@ -4,9 +4,7 @@
 
 ## Background
 
-It is a beautiful spring day, and it is two weeks since you have been hired as a new data engineer at Pewlett Hackard. Your first major task is a research project on employees of the corporation from the 1980s and 1990s. All that remain of the database of employees from that period are six CSV files.
-
-In this project, I designed the SQL database tables to hold data in the CSVs, imported the CSVs into a SQL database, and analyzed the data:
+In this project, I designed the SQL database tables to hold employee data in the sCSVs, imported the CSVs into a SQLite database, and analyzed the data:
 
 1. Data Modeling
 
@@ -19,6 +17,8 @@ In this project, I designed the SQL database tables to hold data in the CSVs, im
 
 Inspect the CSVs and sketch out an ERD of the tables. The following tool is helpful in architecting the database [http://www.quickdatabasediagrams.com](http://www.quickdatabasediagrams.com).
 
+(employees_db_quickdbd.JPG)
+
 #### Data Engineering
 
 * Create a table schema for each of the six CSV files specifying data types, primary keys, foreign keys, and other constraints.
@@ -26,7 +26,7 @@ Inspect the CSVs and sketch out an ERD of the tables. The following tool is help
 
 #### Data Analysis
 
-Once you have a complete database, do the following:
+Inside the SQL database, the following analysis was performed.
 
 1. List the following details of each employee: employee number, last name, first name, gender, and salary.
 
@@ -45,4 +45,17 @@ Once you have a complete database, do the following:
 8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
 
 
+Visualization analysis of the average salary by title indicates a several strange discrepancies in compensation:
+•	Sr. Engineer / Engineer / Assistant Engineer have equivalent salaries (Sr Engineer should be notably higher than Engineer, notably higher than Assistant Engineer)
+•	Staff & Sr. Staff have equivalent salaries (Sr. Staff should be notably higher)
+•	Managers are less compensated lower than Staff / Sr. Staff (generally not the case)
+•	Technique Leader appears to be the lowest paid (generally they are among the highest paid).
 
+ (salarytitle.png)
+
+The maximum salaries also show similar discrepancies
+•	Maximum salary for a manager is the lowest (even lower than an assistant engineer)
+•	Staff & Sr. Staff again show equivalent maximums
+•	Sr. Engineer and Engineer show equivalent maximums
+ 
+(maxsalarytitle.png)
