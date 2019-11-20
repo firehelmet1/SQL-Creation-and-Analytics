@@ -17,7 +17,7 @@ In this project, I designed the SQL database tables to hold employee data in the
 
 Inspect the CSVs and sketch out an ERD of the tables. The following tool is helpful in architecting the database [http://www.quickdatabasediagrams.com](http://www.quickdatabasediagrams.com).
 
-(employees_db_quickdbd.JPG)
+![DBsetup](employees_db_quickdbd.JPG)
 
 #### Data Engineering
 
@@ -51,11 +51,11 @@ Visualization analysis of the average salary by title indicates a several strang
 •	Managers are less compensated lower than Staff / Sr. Staff (generally not the case)
 •	Technique Leader appears to be the lowest paid (generally they are among the highest paid).
 
- (salarytitle.png)
+ ![Mean Salary](salarytitle.png)
 
 The maximum salaries also show similar discrepancies
 •	Maximum salary for a manager is the lowest (even lower than an assistant engineer)
 •	Staff & Sr. Staff again show equivalent maximums
 •	Sr. Engineer and Engineer show equivalent maximums
  
-(maxsalarytitle.png)
+![Max Salary](maxsalarytitle.png)
