@@ -1,4 +1,4 @@
-# SQL Analysis of an Employee Database: A Mystery in Two Parts
+# SQL Analysis of an Employee Database
 
 ![sql.png](sql.png)
 
@@ -59,3 +59,6 @@ The maximum salaries also show similar discrepancies
 •	Sr. Engineer and Engineer show equivalent maximums
  
 ![Max Salary](maxsalarytitle.png)
+
+## Code Execution
+Execute in Jupyter Notebook
